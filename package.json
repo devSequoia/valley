@@ -24,7 +24,8 @@
     "start": "bun run src/bot.ts",
     "prepare": "husky install",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "tdd": "bun test --watch"
   },
   "lint-staged": {},
   "repository": {
