@@ -1,0 +1,45 @@
+{
+  "name": "valley",
+  "module": "src/bot.ts",
+  "type": "module",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "bun-types": "latest",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.50.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  },
+  "scripts": {
+    "start": "bun run src/bot.ts",
+    "prepare": "husky install",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts"
+  },
+  "lint-staged": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devSequoia/Valley.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/devSequoia/Valley/issues"
+  },
+  "homepage": "https://github.com/devSequoia/Valley#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
